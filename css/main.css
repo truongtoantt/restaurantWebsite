@@ -9,6 +9,7 @@
 body {
   font-family: 'Mr Dafoe', cursive;
   color: var(--white-color);
+  background: url(../img/body-bg.jpg) center/cover no-repeat fixed;
 }
 .primary-color {
   color: var(--red-color);
@@ -106,4 +107,43 @@ body {
   100% {
     transform: translateY(-10px);
   }
+}
+
+/* menu section */
+.item-container {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0));
+  transition: all 1.6s ease-out;
+}
+.item-container:hover {
+  outline: 10px solid var(--red-color);
+  outline-offset: 0.8rem;
+}
+.item-img {
+  transition: all 1.6s ease;
+}
+.item-container:hover .item-img {
+  transform: scale(1.12);
+  opacity: 0.5;
+}
+.item-link {
+  color: var(--red-color);
+  border-top: 3px solid var(--red-color);
+  border-bottom: 3px solid var(--red-color);
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 2s ease;
+}
+.item-container:hover .item-link {
+  opacity: 1;
+}
+.item-link:hover {
+  color: #242424;
+  border: 3px solid var(--white-color);
+  background-color: var(--white-color);
 }
