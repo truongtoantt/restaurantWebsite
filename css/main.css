@@ -1,3 +1,27 @@
+/* white-color: #c9c1ac */
+/* red color: #d3325f */
+:root {
+  --white-color: #c9c1ac;
+  --red-color: #d3325f;
+  --black-color: #000000;
+}
+
 body {
   font-family: 'Mr Dafoe', cursive;
+}
+.primary-color {
+  color: var(--red-color);
+}
+
+.info {
+  background-color: var(--white-color);
+}
+.info a {
+  transition: all 0.5s ease-in;
+}
+.info a:hover {
+  color: var(--black-color);
+}
+.info h2 {
+  word-spacing: 0.6rem;
 }
